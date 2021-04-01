@@ -1,0 +1,9 @@
+[Unit]
+Description=My GPIO test shell script
+
+[Service]
+Type=oneshot
+ExecStart=/usr/local/bin/gpiotest.sh
+
+[Install]
+WantedBy=multi-user.target
